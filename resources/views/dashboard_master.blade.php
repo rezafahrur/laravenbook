@@ -57,7 +57,7 @@
         'content'   :{
             img:'{{asset ("/img/user2-160x160.jpg")}}',
             user:'Pak Reza',
-            message:'Selamat Datang Kembali<br> Dalam Sistem Akademik Ini'
+            message:'Selamat Datang Kembali<br> Dalam Sistem Inventaris Ini'
         },
         'cssanimationIn'    :'bounceInDown',
         'cssanimationOut'   :'zoomOutDown',

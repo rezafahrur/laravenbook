@@ -23,7 +23,7 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <section class="content-header blur">
         <h1>
             {{ $page_title or "Buku & Kategori" }}
             <small>{{ $page_description or "Laporan Semua Buku Beserta Kategori yang Ada" }}</small>

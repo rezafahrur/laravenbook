@@ -13,3 +13,11 @@
 @import 'skin-black2.min.css';
 //datatables responsive
 @import url("https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css");
+//blur
+body.modal-open .blur {
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
+}

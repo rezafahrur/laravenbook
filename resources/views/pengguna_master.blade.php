@@ -24,7 +24,7 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <section class="content-header blur">
         <h1>
             {{ $page_title or "Pengguna" }}
             <small>{{ $page_description or "Daftar Pengguna Sistem Ini" }}</small>

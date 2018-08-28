@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row blur">
       <!-- Tabel Buku -->
       @include('contents.konten_buku.buku.tabel_buku')
       <!-- Tabel Kategori -->

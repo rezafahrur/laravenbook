@@ -1,5 +1,5 @@
 <!-- Main Header -->
-<header class="main-header">
+<header class="main-header blur">
     <a href="#" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>S</b>A</span>

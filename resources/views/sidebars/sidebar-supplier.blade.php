@@ -1,5 +1,5 @@
 <!-- Left side column. contains the sidebar -->
-<aside class="main-sidebar">
+<aside class="main-sidebar blur">
 
   <!-- sidebar: style can be found in sidebar.less -->
   <section class="sidebar">

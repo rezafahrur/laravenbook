@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row blur">
   <!-- Tabel Supplier -->
   @include('contents.konten_supplier.tabel_supplier')
 </div>

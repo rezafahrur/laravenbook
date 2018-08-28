@@ -9,6 +9,7 @@
         <link href="{{ asset("/css/bandel.css") }}" rel="stylesheet" type="text/css" />
     </head>
     <body class="hold-transition skin-black2 sidebar-mini fixed">
+    
     <audio id="notif" src="{{asset("/sounds/unconvinced.mp3")}}" 
         autostart="false"></audio>
     <audio id="addSound" src="{{asset("/sounds/graceful.mp3")}}" 
@@ -24,7 +25,7 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <section class="content-header blur">
         <h1>
             {{ $page_title or "Supplier" }}
             <small>{{ $page_description or "Laporan Semua Supplier yang Ada" }}</small>

@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer blur">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
         Laravenbook - Reza F. Rasyid
