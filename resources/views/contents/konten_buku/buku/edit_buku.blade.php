@@ -1,4 +1,4 @@
-<div class="modal fade" id="modal-guru-edit">
+<div class="modal fade" id="modal-buku-edit">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">

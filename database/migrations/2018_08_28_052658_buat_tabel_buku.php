@@ -32,11 +32,6 @@ class BuatTabelBuku extends Migration
                   ->onDelete('cascade');
             $table->bigInteger('harga');
             $table->integer('quantity');
-            $table->unsignedInteger('id_user');
-            $table->foreign('id_user')
-                  ->references('id')
-                  ->on('users')
-                  ->onDelete('cascade');
             $table->timestamps();
         });
     }

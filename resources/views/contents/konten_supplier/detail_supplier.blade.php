@@ -69,7 +69,7 @@
       <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
           <a href="supplier/{{$detailSupplier->id}}/edit">
-            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" class="btn btn-primary">Ubah</button>
           </a>
         </div>
        

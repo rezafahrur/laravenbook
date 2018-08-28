@@ -8,7 +8,10 @@
         <link href="{{ asset("/css/bandel.css") }}" rel="stylesheet" type="text/css" />
     </head>
     <body class="hold-transition skin-black2 sidebar-mini fixed">
-    
+        <audio id="notif" src="{{asset("/sounds/unconvinced.mp3")}}" 
+        autostart="false"></audio>
+    <audio id="addSound" src="{{asset("/sounds/graceful.mp3")}}" 
+        autostart="false"></audio>
     <div class="wrapper">
 
 <!-- add Header -->
@@ -35,7 +38,7 @@
     <!-- Main content -->
     <section class="content">
         <!-- Content Here -->
-        @include('contents.buku.buku')
+        @include('contents.konten_buku.buku')
     </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
 
@@ -50,5 +53,29 @@
     <!-- jQuery 2.1.3 -->
     <script src="{{ asset ("/js/app.js") }}"></script>
     <script src="{{ asset ("/js/bandel.js") }}"></script>
+    @if(Session::get('successKategori') == true)
+        <script src="{{ asset ("/js/buku/successKategori.js") }}" ></script>
+    @endif  
+    @if(Session::get('successBuku') == true)
+    <script src="{{ asset ("/js/buku/successBuku.js") }}" ></script>
+    @endif  
+    @if (Session::get('editKategori') == true)
+    <script src="{{ asset("/js/buku/editKategori.js") }}" ></script>    
+    @endif
+    @if (Session::get('editBuku') == true)
+    <script src="{{ asset("/js/buku/editBuku.js") }}" ></script>    
+    @endif
+    @if (Session::get('successUpdateKategori') == true)
+    <script src="{{ asset("/js/buku/successUpdateKategori.js") }}" ></script>    
+    @endif
+    @if (Session::get('successUpdateBuku') == true)
+    <script src="{{ asset("/js/buku/successUpdateBuku.js") }}" ></script>    
+    @endif
+    @if (Session::get('successDeleteKategori') == true)
+    <script src="{{ asset("/js/buku/successDeleteKategori.js") }}" ></script> 
+    @endif
+    @if (Session::get('successDeleteBuku') == true)
+    <script src="{{ asset("/js/buku/successDeleteBuku.js") }}" ></script> 
+    @endif
     </body>
 </html>

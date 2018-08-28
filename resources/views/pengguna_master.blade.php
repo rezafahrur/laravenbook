@@ -9,7 +9,10 @@
         <link href="{{ asset("/css/bandel.css") }}" rel="stylesheet" type="text/css" />
     </head>
     <body class="hold-transition skin-black2 sidebar-mini fixed">
-    
+        <audio id="notif" src="{{asset("/sounds/unconvinced.mp3")}}" 
+        autostart="false"></audio>
+    <audio id="addSound" src="{{asset("/sounds/graceful.mp3")}}" 
+        autostart="false"></audio>
     <div class="wrapper">
 
 <!-- add Header -->

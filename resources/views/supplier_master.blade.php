@@ -39,7 +39,7 @@
     <!-- Main content -->
     <section class="content">
         <!-- Content Here -->
-        @include('contents.supplier.supplier')
+        @include('contents.konten_supplier.supplier')
     </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
 

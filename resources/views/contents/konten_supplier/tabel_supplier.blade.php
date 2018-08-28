@@ -40,7 +40,7 @@
                     <div class="col-md-1"> </div>
                     <div class="col-md-1">
                     <a href="supplier/{{$dataSupplier->id}}/edit">
-                        <button type="button" class="btn btn-primary">Edit</button>
+                        <button type="button" class="btn btn-primary">Ubah</button>
                       </a>
                     </div>
                    <div class="col-md-1"></div>

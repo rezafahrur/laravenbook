@@ -22,9 +22,14 @@ Route::get('/supplier/{id}','SupplierController@show');
 Route::get('/supplier/{id}/edit', 'SupplierController@edit');
 Route::put('/supplier/{id}', 'SupplierController@update');
 Route::delete('/supplier/{id}', 'SupplierController@destroy');
-Route::get('/buku', function () {
-    return view('buku_master');
-});
+
+Route::get('/buku', 'BukuController@index')->name('buku');
+Route::post('/buku', 'BukuController@store');
+Route::get('/buku/{detail}/{id}/edit', 'BukuController@edit');
+Route::put('/buku/{id}', 'BukuController@update');
+Route::delete('/buku/{detail}/{id}', 'BukuController@destroy');
+
+
 Route::get('/pengguna', function () {
     return view('pengguna_master');
 });
