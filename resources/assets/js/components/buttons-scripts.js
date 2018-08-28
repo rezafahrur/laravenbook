@@ -22,7 +22,7 @@ $("#closeKategori").click(function () {
     $.amaran({
         'theme': 'colorful',
         'content': {
-            bgcolor: '#039E58',
+            bgcolor: '#E69515',
             color: '#fff',
             message: '<b>Data Kategori ditutup</b><br> refresh halaman jika ingin melihat kembali'
         },

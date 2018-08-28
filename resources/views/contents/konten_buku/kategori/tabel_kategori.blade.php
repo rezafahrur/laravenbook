@@ -7,7 +7,7 @@
                 <div class="box-tools pull-right">
                     <button id="maxKategori" type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
                     </button>
-                    <button id="closeBuku" type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    <button id="closeKategori" type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                   </div>
                   <!-- /.box-tools -->
               </div>
@@ -33,6 +33,7 @@
                                   <button type="button" class="btn btn-warning">Ubah</button>
                                 </a>
                             </div>
+                            <div class="col-md-1"> </div>
                             <div class="col-md-2">
                             <form action="buku/kategori/{{ $dataKategori->id }}" method="post">
                             @csrf
