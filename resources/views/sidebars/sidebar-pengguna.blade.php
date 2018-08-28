@@ -28,8 +28,8 @@
               </a>
         </li>
       <li class="active">
-          <a href="admin">
-            <i class="fas fa-user-cog"></i> <span>Admin</span>
+          <a href="pengguna">
+            <i class="fas fa-user-cog"></i> <span>Pengguna</span>
           </a>
       </li>
     </ul>

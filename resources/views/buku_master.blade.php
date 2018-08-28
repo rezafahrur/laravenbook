@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>SIAKAD | Buku</title>
+        <title>LARAVENBOOK | Buku</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <link href="{{ asset("/css/app.css") }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset("/css/bandel.css") }}" rel="stylesheet" type="text/css" />

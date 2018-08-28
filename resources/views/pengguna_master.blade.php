@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>SIAKAD | Admin</title>
+        <title>LARAVENBOOK | Pengguna</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- Bootstrap 3.3.7 -->
         <link href="{{ asset("/css/app.css") }}" rel="stylesheet" type="text/css" />
@@ -16,15 +16,15 @@
 @include('layouts.header')
 
 <!-- add Sidebar for this page -->
-@include('sidebars.sidebar-admin')
+@include('sidebars.sidebar-pengguna')
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            {{ $page_title or "Admin" }}
-            <small>{{ $page_description or "Daftar Admin Sistem Ini" }}</small>
+            {{ $page_title or "Pengguna" }}
+            <small>{{ $page_description or "Daftar Pengguna Sistem Ini" }}</small>
         </h1>
         <!-- breadcrumbs here 
         <ol class="breadcrumb">
@@ -36,7 +36,7 @@
     <!-- Main content -->
     <section class="content">
         <!-- Content Here -->
-        @include('contents.admin')
+        @include('contents.pengguna')
     </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
 

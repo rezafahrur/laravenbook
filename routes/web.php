@@ -25,6 +25,6 @@ Route::delete('/supplier/{id}', 'SupplierController@destroy');
 Route::get('/buku', function () {
     return view('buku_master');
 });
-Route::get('/admin', function () {
-    return view('admin_master');
+Route::get('/pengguna', function () {
+    return view('pengguna_master');
 });

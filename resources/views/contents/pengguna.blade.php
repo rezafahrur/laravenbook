@@ -4,7 +4,7 @@
   <div id="dataTabelSiswa" class="col-md-6 return">
     <div class="box box-primary box-solid collapsed-box">
         <div class="box-header with-border">
-            <h3 class="box-title">Data Admin</h3>
+            <h3 class="box-title">Data Pengguna</h3>
           
           <div class="box-tools pull-right">
               <button id="maxSiswa" type="button" class="btn btn-box-tool minMax" data-widget="collapse"><i class="fa fa-plus"></i>

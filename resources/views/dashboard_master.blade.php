@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>SIAKAD | Dashboard</title>
+        <title>LARAVENBOOK | Dashboard</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- Bootstrap 3.3.7 -->
         <link href="{{ asset("/css/app.css") }}" rel="stylesheet" type="text/css" />
