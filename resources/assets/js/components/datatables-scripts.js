@@ -1,7 +1,7 @@
 //buat datatables tabel wali
 $(document).ready(function () {
-    var tableWali =
-        $("#wali").DataTable({
+    var tableKategori =
+        $("#kategori").DataTable({
             autoWidth: true,
             order: [
                 [0, "asc"]
@@ -9,13 +9,13 @@ $(document).ready(function () {
             responsive: true,
             deferRender: true,
             language: {
-                sEmptyTable: "Tidak ada data wali murid yang tersedia pada tabel ini",
+                sEmptyTable: "Tidak ada data kategori yang tersedia pada tabel ini",
                 sProcessing: "Sedang memproses...",
-                sLengthMenu: "Tampilkan _MENU_ Data Wali Murid",
-                sZeroRecords: "Tidak ditemukan Data Wali Murid yang sesuai",
-                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Wali Murid",
-                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Wali Murid",
-                sInfoFiltered: "(disaring dari _MAX_ Data Wali Murid keseluruhan)",
+                sLengthMenu: "Tampilkan _MENU_ Data Kategori",
+                sZeroRecords: "Tidak ditemukan Data Kategori yang sesuai",
+                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Kategori",
+                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Kategori",
+                sInfoFiltered: "(disaring dari _MAX_ Data Kategori keseluruhan)",
                 sInfoPostFix: "",
                 sSearch: "Cari:",
                 sUrl: "",
@@ -29,10 +29,10 @@ $(document).ready(function () {
         });
 });
 
-//buat datatables tabel siswa
+//buat datatables tabel Buku
 $(document).ready(function () {
-    var tableSiswa =
-        $("#siswa").DataTable({
+    var tableBuku =
+        $("#buku").DataTable({
             autoWidth: true,
             order: [
                 [0, "asc"]
@@ -40,13 +40,13 @@ $(document).ready(function () {
             responsive: true,
             deferRender: true,
             language: {
-                sEmptyTable: "Tidak ada data siswa yang tersedia pada tabel ini",
+                sEmptyTable: "Tidak ada data buku yang tersedia pada tabel ini",
                 sProcessing: "Sedang memproses...",
-                sLengthMenu: "Tampilkan _MENU_ Data Siswa",
-                sZeroRecords: "Tidak ditemukan data siswa yang sesuai",
-                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Siswa",
-                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Siswa",
-                sInfoFiltered: "(disaring dari _MAX_ Data Siswa keseluruhan)",
+                sLengthMenu: "Tampilkan _MENU_ Data Buku",
+                sZeroRecords: "Tidak ditemukan data Buku yang sesuai",
+                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Buku",
+                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Buku",
+                sInfoFiltered: "(disaring dari _MAX_ Data Buku keseluruhan)",
                 sInfoPostFix: "",
                 sSearch: "Cari:",
                 sUrl: "",
@@ -60,10 +60,10 @@ $(document).ready(function () {
         });
 });
 
-//buat datatables tabel guru
+//buat datatables tabel Supplier
 $(document).ready(function () {
-    var tableGuru =
-        $("#guru").DataTable({
+    var tableSupplier =
+        $("#supplier").DataTable({
             autoWidth: true,
             order: [
                 [0, "asc"]
@@ -71,15 +71,15 @@ $(document).ready(function () {
             responsive: true,
             deferRender: true,
             language: {
-                sEmptyTable: "Tidak ada data guru yang tersedia pada tabel ini",
+                sEmptyTable: "Tidak ada data supplier yang tersedia pada tabel ini",
                 sProcessing: "Sedang memproses...",
-                sLengthMenu: "Tampilkan _MENU_ Data Guru",
-                sZeroRecords: "Tidak ditemukan Data Guru yang sesuai",
-                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Guru",
-                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Guru",
-                sInfoFiltered: "(disaring dari _MAX_ Data Guru keseluruhan)",
+                sLengthMenu: "Tampilkan _MENU_ Data Supplier",
+                sZeroRecords: "Tidak ditemukan Data Supplier yang sesuai",
+                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Supplier",
+                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Supplier",
+                sInfoFiltered: "(disaring dari _MAX_ Data Supplier keseluruhan)",
                 sInfoPostFix: "",
-                sSearch: "Cari Data Guru:",
+                sSearch: "Cari Data Supplier:",
                 sUrl: "",
                 oPaginate: {
                     sFirst: "Pertama",
@@ -91,10 +91,10 @@ $(document).ready(function () {
         });
 });
 
-//buat datatables tabel guru aktif
+//buat datatables tabel Admin
 $(document).ready(function () {
-    var tableGuruAktif =
-        $("#guruAktif").DataTable({
+    var tableAdmin =
+        $("#admin").DataTable({
             autoWidth: true,
             order: [
                 [0, "asc"]
@@ -102,46 +102,15 @@ $(document).ready(function () {
             responsive: true,
             deferRender: true,
             language: {
-                sEmptyTable: "Tidak ada data guru aktif yang tersedia pada tabel ini",
+                sEmptyTable: "Tidak ada data admin sistem ini yang tersedia pada tabel",
                 sProcessing: "Sedang memproses...",
-                sLengthMenu: "Tampilkan _MENU_ Data Guru Aktif",
-                sZeroRecords: "Tidak ditemukan Data Guru Aktif yang sesuai",
-                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Guru Aktif",
-                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Guru Aktif",
-                sInfoFiltered: "(disaring dari _MAX_ Data Guru Aktif keseluruhan)",
+                sLengthMenu: "Tampilkan _MENU_ Data Admin Ini",
+                sZeroRecords: "Tidak ditemukan Data Admin yang Sesuai",
+                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Admin",
+                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Admin",
+                sInfoFiltered: "(disaring dari _MAX_ keseluruhan Data Admin",
                 sInfoPostFix: "",
-                sSearch: "Cari Data Guru Aktif:",
-                sUrl: "",
-                oPaginate: {
-                    sFirst: "Pertama",
-                    sPrevious: "Sebelumnya",
-                    sNext: "Selanjutnya",
-                    sLast: "Terakhir"
-                }
-            }
-        });
-});
-
-//buat datatables tabel pegawai
-$(document).ready(function () {
-    var tablePegawai =
-        $("#pegawai").DataTable({
-            autoWidth: true,
-            order: [
-                [0, "asc"]
-            ],
-            responsive: true,
-            deferRender: true,
-            language: {
-                sEmptyTable: "Tidak ada data pegawai sekolah ini yang tersedia pada tabel",
-                sProcessing: "Sedang memproses...",
-                sLengthMenu: "Tampilkan _MENU_ Data Pegawai Sekolah Ini",
-                sZeroRecords: "Tidak ditemukan Data Pegawaiyang Sesuai",
-                sInfo: "Menampilkan _START_ sampai _END_ dari _TOTAL_ Data Pegawai",
-                sInfoEmpty: "Menampilkan 0 sampai 0 dari 0 Data Pegawai",
-                sInfoFiltered: "(disaring dari _MAX_ keseluruhan Data Pegawai non-guru",
-                sInfoPostFix: "",
-                sSearch: "Cari Data Pegawai:",
+                sSearch: "Cari Data Admin:",
                 sUrl: "",
                 oPaginate: {
                     sFirst: "Pertama",

@@ -19,6 +19,7 @@ class BuatTabelSupplier extends Migration
             $table->string('nama_supplier');
             $table->string('alamat');
             $table->string('no_telp');
+            $table->timestamps();
         });
     }
 

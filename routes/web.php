@@ -16,9 +16,12 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard_master');
 });
-Route::get('/supplier', function () {
-    return view('supplier_master');
-});
+Route::get('/supplier', 'SupplierController@index')->name('supplier');
+Route::post('/supplier', 'SupplierController@store');
+Route::get('/supplier/{id}','SupplierController@show');
+Route::get('/supplier/{id}/edit', 'SupplierController@edit');
+Route::put('/supplier/{id}', 'SupplierController@update');
+Route::delete('/supplier/{id}', 'SupplierController@destroy');
 Route::get('/buku', function () {
     return view('buku_master');
 });
