@@ -3,132 +3,76 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Ubah Data Guru {{$editGuru->nama_guru}} </h4>
+          <h4 class="modal-title">Ubah Data Buku {{$editBuku->judul}} </h4>
         </div>
         <div class="modal-body">
-        <form action="kepegawaian/{{$editGuru->id}}" method="post" class="form-horizontal">
+        <form action="buku/{{$editBuku->id}}" method="post" class="form-horizontal">
            @csrf
-           <input type="hidden" name="jenisForm" value="guru">
+           <input type="hidden" name="jenisForm" value="buku">
           <div class="form-group">
-            <label for="editNIKGuru" class="col-sm-2 control-label">NIK</label>
+            <label for="editJudulBuku" class="col-sm-2 control-label">Kode Buku</label>
             <div class="col-sm-10">
-            <input type="text" name="nikGuru" class="form-control" id="editNIKGuru" value="{{$editGuru->nik_guru}}">
+            <input type="text" name="kodeBuku" class="form-control" id="editKodeBuku" value="{{$editBuku->kode_buku}}">
             </div>
           </div>
           <div class="form-group">
-            <label for="editKTPGuru" class="col-sm-2 control-label">KTP</label>
+            <label for="editJudulBuku" class="col-sm-2 control-label">Judul Buku</label>
             <div class="col-sm-10">
-            <input type="text" name="ktpGuru" class="form-control" id="editKTPGuru" value="{{$editGuru->ktp_guru}}">
+            <input type="text" name="judulBuku" class="form-control" id="editJudulBuku" value="{{$editBuku->judul}}">
             </div>
           </div>
           <div class="form-group">
-            <label for="editNamaGuru" class="col-sm-2 control-label">Nama</label>
+            <label for="editPengarang" class="col-sm-2 control-label">Pengarang</label>
             <div class="col-sm-10">
-            <input type="text" name="namaGuru" class="form-control" id="editNamaGuru" value="{{$editGuru->nama_guru}}">
+            <input type="text" name="pengarang" class="form-control" id="editPengarang" value="{{$editBuku->pengarang}}">
             </div>
           </div>
           <div class="form-group">
-            <label for="editGelarGuru" class="col-sm-2 control-label">Gelar</label>
+            <label for="editTahunTerbit" class="col-sm-2 control-label">Tahun Terbit</label>
             <div class="col-sm-10">
-            <input type="text" name="gelarGuru" class="form-control" id="editGelarGuru" value="{{$editGuru->gelar_guru}}" >
+            <input type="text" name="tahunTerbit" class="form-control" id="editTahunTerbit" value="{{$editBuku->tahun_terbit}}" >
             </div>
           </div>
           <div class="form-group">
-            <label for="editTempatLahirGuru" class="col-sm-2 control-label">Tempat Lahir</label>
+            <label for="editQuantity" class="col-sm-2 control-label">Jumlah Buku(Satuan)</label>
             <div class="col-sm-10">
-            <input type="text" name="tempatLahirGuru" class="form-control" id="editempatLahirGuru" value="{{$editGuru->tempat_lahir}}">
+            <input type="text" name="quantity" class="form-control" id="editQuantity" value="{{$editBuku->quantity}}">
             </div>
           </div>
           <div class="form-group">
-            <label for="editTglLahirGuru" class="col-sm-2 control-label">Tanggal Lahir</label>
+            <label for="editHarga" class="col-sm-2 control-label">Harga Buku</label>
             <div class="col-sm-10">
-            <input type="text" name="tanggalLahirGuru" class="form-control" id="editTanggalLahirGuru" value="{{$editGuru->tanggal_lahir}}">
+            <input type="text" name="harga" class="form-control" id="editHarga" value="{{$editBuku->harga}}">
             </div>
           </div>
           <div class="form-group">
-            <label for="editJKGuru" class="col-sm-2 control-label">Jenis Kelamin</label>
+            <label for="editSupplier" class="col-sm-2 control-label">Supplier</label>
             <div class="col-sm-8">
-              <select class="form-control" name="jkGurushow" disabled>
-              <option value="{{$editGuru->jenis_kelamin}}" selected>{{$editGuru->jenis_kelamin}}</option>
+              <select class="form-control" name="idSupplier">
+              <option value="{{$editBuku->id_supplier}}" selected>{{$editBuku->namaSupplier}}</option>
+              @foreach ($dataSuppliers as $dataSupplier)
+              <option value="{{$dataSupplier->id}}">{{$dataSupplier->nama_supplier}}</option>
+              @endforeach
               </select>
-            <input id="editJKGuru" type="hidden" name="jkGuru" value="{{$editGuru->jenis_kelamin}}">
             </div>
           </div>
           <div class="form-group">
-              <label for="editAgamaGuru" class="col-sm-2 control-label">Agama</label>
+              <label for="editKategori" class="col-sm-2 control-label">Kategori</label>
               <div class="col-sm-8">
-                <select class="form-control" name="agamaGuru">
-                <option value="{{$editGuru->agama}}" selected>
-                  {{$editGuru->agama}}</option>       
-                  <option value="NULL">Pilih Agama Lain Di bawah</option>
-                  <option value="Islam">Islam</option>
-                  <option value="Katolik">Katolik</option>
-                  <option value="Protestan">Protestan</option>
-                  <option value="Hindu">Hindu</option>
-                  <option value="Budha">Budha</option>
-                  <option value="Konghucu">Konghucu</option>
-                </select>
-              </div>
-            </div>
-          <div class="form-group">
-            <label for="editPendidikanGuru" class="col-sm-2 control-label">Pendidikan</label>
-            <div class="col-sm-10">
-            <input type="text" name="pendidikanGuru" class="form-control" id="editPendidikanGuru" value="{{$editGuru->pendidikan}}">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="editAlamatGuru" class="col-sm-2 control-label">Alamat</label>
-            <div class="col-sm-10">
-            <input type="text" name="alamatGuru" class="form-control" id="editAlamatGuru" value="{{$editGuru->alamat}}">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="editNoTelpGuru" class="col-sm-2 control-label">No. Telepon</label>
-            <div class="col-sm-10">
-            <input type="text" name="noTelpGuru" class="form-control" id="editNoTelpGuru" value="{{$editGuru->no_telp}}">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="editNoTelpDaruratGuru" class="col-sm-2 control-label">No. Telepon Darurat</label>
-            <div class="col-sm-10">
-              <input type="text" name="noTelpDaruratGuru" class="form-control" id="editNoTelpDaruratGuru" value="{{$editGuru->no_telp_darurat}}">
-            </div>
-          </div>
-          <div class="form-group">
-              <label for="editStatusGuru" class="col-sm-2 control-label">Status Guru</label>
-              <div class="col-sm-8">
-                <select class="form-control" name="statusGuru">
-                  <option value="{{$editGuru->status_guru}}" selected>{{$editGuru->status_guru}}</option>
-                  <option value="NULL">Pilih Status Guru Di bawah</option>
-                  <option value="PNS">PNS</option>
-                  <option value="NON-PNS">NON-PNS</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-                <label for="editStatusGuru" class="col-sm-2 control-label">Status Mengajar</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name="statusMengajar">
-                    <option value="{{$editGuru->status_mengajar}}" selected>{{$editGuru->status_mengajar}}</option>
-                    <option value="NULL">Pilih Status Mengajar Di bawah</option>
-                    <option value="Aktif">Aktif</option>
-                    <option value="Tidak Aktif">Tidak Aktif</option>
-                    <option value="Pensiun">Pensiun</option>
+                <select class="form-control" name="idKategori">
+                  <option value="{{$editBuku->id_kategori}}" selected>{{$editBuku->namaKategori}}</option>
+                  @foreach ($dataKategoris as $dataKategori)
+                  <option value="{{$dataKategori->id}}">{{$dataKategori->nama_kategori}}</option>
+                  @endforeach
                   </select>
-                </div>
               </div>
-            <input type="hidden" name="_method" value="PUT">
-          <!--
-          <div class="form-group">
-            <label for="inputPasswordGuru" class="col-sm-2 control-label">Password</label>
-            <div class="col-sm-10">
-              <input type="password" name="passwordGuru" class="form-control" id="inputPasswordGuru" placeholder="Password">
             </div>
-          </div> -->
+          
+            <input type="hidden" name="_method" value="PUT">
         </div> <!--- /.modal body -->
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-          <button type="submit" class="btn btn-primary">Ubah Data Guru</button>
+          <button type="submit" class="btn btn-primary">Ubah Data Buku</button>
         </div>
       </form>
       </div><!-- /.modal-content -->

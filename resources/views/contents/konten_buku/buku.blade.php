@@ -9,6 +9,8 @@
     @include('contents.konten_buku.buku.form_buku')
 <!-- modal Form kategori -->
 @include('contents.konten_buku.kategori.form_kategori')
+<!-- modal Form hapus -->
+
 <!-- Detail Buku -->
   @if ($detailBuku = Session::get('detailBuku'))
     @include('contents.konten_buku.buku.detail_buku')

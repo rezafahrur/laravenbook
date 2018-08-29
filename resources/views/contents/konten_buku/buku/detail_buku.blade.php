@@ -83,7 +83,9 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-            <button type="submit" class="btn btn-primary">Edit</button>
+            <a href="buku/{{ $detail = "buku" }}/{{$detailBuku->id}}/edit">
+              <button type="button" class="btn btn-primary">Edit</button>
+            </a>
           </div>
          
         </div><!-- /.modal-content -->

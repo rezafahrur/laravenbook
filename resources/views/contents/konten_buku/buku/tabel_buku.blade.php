@@ -39,12 +39,26 @@
                   <td> {{$dataBuku->quantity}} </td>
                 <td> {{$dataBuku->harga}} </td>
                   <td>  
+                    <div class="row">
+                    <div class="col-md-4">
                     <a href="buku/{{$dataBuku->id}}">
                       <button type="button" class="btn btn-info">Detail</button>
                       </a>
+                    </div>
+                   
+                    <div class="col-md-3">
                     <a href="buku/{{ $detail = "buku" }}/{{$dataBuku->id}}/edit">
                         <button type="button" class="btn btn-primary">Edit</button>
                       </a>
+                    </div>
+                    <div class="col-md-3">
+                      <form action="buku/buku/{{ $dataBuku->id }}" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Hapus</button>
+                            <input type="hidden" name="_method" value="DELETE">
+                        </form>
+                      </div>
+                      </div>
                   </td>
                 @endforeach
                 </tr>
@@ -59,3 +73,21 @@
         </div>
         <!-- /.box -->
     </div>
+
+    <div class="modal fade" id="modal-hapus-buku">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Hapus Data Buku</h4>
+          </div>
+          <div class="modal-body">
+           <h5>Apakah Anda Yakin Ingin menghapus {{$dataBuku->judul}} ?</h5>
+          </div> <!--- /.modal body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+            <button type="submit" class="btn btn-danger">Ya, Hapus</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->

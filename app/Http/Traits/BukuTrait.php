@@ -75,5 +75,10 @@ trait BukuTrait {
     $buku->save();
   }
 
+  public function hapusDataBukuTrait($id){
+        $buku = Buku::find($id);
+        $buku->delete();
+  }
+
 }
 ?>
