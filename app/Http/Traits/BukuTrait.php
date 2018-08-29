@@ -2,6 +2,7 @@
 namespace App\Http\Traits;
 
 use App\Models\Buku;
+use App\Models\Supplier;
 
 
 trait BukuTrait {
@@ -9,6 +10,11 @@ trait BukuTrait {
   public function tampilDataBukuTrait() {
     $buku = Buku::orderBy('id','desc')->get();
     return $buku;
+  }
+
+  public function tampilDataSupplierTrait(){
+    $supplier = Supplier::orderBy('id','desc')->get();
+    return $supplier;
   }
 
   public function tampilDetailBukuTrait($id){

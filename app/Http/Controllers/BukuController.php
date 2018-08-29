@@ -17,12 +17,14 @@ class BukuController extends Controller
         $noBuku = 1;
         $noKategori = 1;
         $dataKategoris = $this->tampilDataKategoriTrait();
+        $dataSuppliers = $this->tampilDataSupplierTrait();
         $dataBukus = $this->tampilDataBukuTrait();
 
         return view('buku_master', [
                                     'noBuku' => $noBuku,
                                     'noKategori'=>$noKategori,
                                     'dataKategoris'=>$dataKategoris,
+                                    'dataSuppliers' =>$dataSuppliers,
                                     'dataBukus'=>$dataBukus
                                     ]);
     }

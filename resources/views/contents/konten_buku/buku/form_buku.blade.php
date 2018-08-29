@@ -48,24 +48,22 @@
           <div class="form-group">
             <label for="inputSupplier" class="col-sm-2 control-label">Supplier</label>
             <div class="col-sm-8">
-              <select class="form-control" name="supplier">
+              <select class="form-control" name="idSupplier">
                   <option value="NULL" selected>Pilih Supplier Buku</option>
-                <option value="L">L</option>
-                <option value="P">P</option>
+                  @foreach ($dataSuppliers as $dataSupplier)
+              <option value="{{$dataSupplier->id}}">{{$dataSupplier->nama_supplier}}</option>      
+                  @endforeach
               </select>
             </div>
           </div>
           <div class="form-group">
               <label for="inputKategori" class="col-sm-2 control-label">Kategori</label>
               <div class="col-sm-8">
-                <select class="form-control" name="kategori">
+                <select class="form-control" name="idKategori">
                     <option value="NULL" selected>Pilih Kategori Buku</option>
-                  <option value="Islam">Islam</option>
-                  <option value="Katolik">Katolik</option>
-                  <option value="Protestan">Protestan</option>
-                  <option value="Hindu">Hindu</option>
-                  <option value="Budha">Budha</option>
-                  <option value="Konghucu">Konghucu</option>
+                    @foreach ($dataKategoris as $dataKategori)
+                <option value="{{$dataKategori->id}}">{{$dataKategori->nama_kategori}}</option>
+                    @endforeach
                 </select>
               </div>
             </div>
