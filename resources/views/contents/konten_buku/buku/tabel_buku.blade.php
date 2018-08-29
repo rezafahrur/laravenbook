@@ -39,7 +39,7 @@
                   <td> {{$dataBuku->quantity}} </td>
                 <td> {{$dataBuku->harga}} </td>
                   <td>  
-                    <a href="buku/{{ $detail = "buku" }}/{{$dataBuku->id}}">
+                    <a href="buku/{{$dataBuku->id}}">
                       <button type="button" class="btn btn-info">Detail</button>
                       </a>
                     <a href="buku/{{ $detail = "buku" }}/{{$dataBuku->id}}/edit">

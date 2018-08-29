@@ -25,6 +25,7 @@ Route::delete('/supplier/{id}', 'SupplierController@destroy');
 
 Route::get('/buku', 'BukuController@index')->name('buku');
 Route::post('/buku', 'BukuController@store');
+Route::get('buku/{id}', 'BukuController@show');
 Route::get('/buku/{detail}/{id}/edit', 'BukuController@edit');
 Route::put('/buku/{id}', 'BukuController@update');
 Route::delete('/buku/{detail}/{id}', 'BukuController@destroy');

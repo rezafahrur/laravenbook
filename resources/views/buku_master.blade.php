@@ -77,5 +77,8 @@
     @if (Session::get('successDeleteBuku') == true)
     <script src="{{ asset("/js/buku/successDeleteBuku.js") }}" ></script> 
     @endif
+    @if (Session::get('detailBuku') == true)
+    <script src="{{ asset("/js/buku/detailBuku.js") }}" ></script>    
+@endif
     </body>
 </html>

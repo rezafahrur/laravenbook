@@ -72,4 +72,11 @@ class BukuController extends Controller
             return redirect()->route('buku')->with('successDeleteBuku', 'buku dihapus');
         }
     }
+
+    public function show($id){
+        $detailBuku = $this->tampilDetailBukuTrait($id);
+        return redirect()->route('buku')->with('detailBuku', $detailBuku);
+
+    }
+    
 }

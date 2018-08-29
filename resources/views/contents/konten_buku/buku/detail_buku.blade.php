@@ -3,83 +3,76 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Data Guru {{$detailGuru->nama_guru}}</h4>
+          <h4 class="modal-title">Detail Buku {{$detailBuku->judul}}</h4>
         </div>
         <div class="modal-body">
 <div class="box box-primary">
     <div class="box-body box-profile">
       <img class="profile-user-img img-responsive img-circle" src="{{ asset("img/user2-160x160.jpg")}}" alt="User profile picture">
 
-      <h3 class="profile-username text-center"> {{$detailGuru->nama_guru}}, {{$detailGuru->gelar_guru}} </h3>
+      <h3 class="profile-username text-center"> {{$detailBuku->judul}}</h3>
 
-      <p class="text-muted text-center">Guru {{$detailGuru->status_guru}} - {{$detailGuru->status_mengajar}} </p>
+      <p class="text-muted text-center">Karangan - {{$detailBuku->pengarang}} </p>
 
       <ul class="list-group list-group-unbordered">
           <li class="list-group-item">
-              <b>Tempat & Tanggal Lahir</b> <a class="pull-right"> {{$detailGuru->tempat_lahir}}, {{$detailGuru->tanggal_lahir}} </a>
+              <b>Kode Buku</b> <a class="pull-right"> {{$detailBuku->kode_buku}}</a>
             </li>
             <li class="list-group-item">
-                <b>Jenis Kelamin</b> 
+                <b>Tahun Terbit</b> 
                 <a class="pull-right">
-                @if ($detailGuru->jenis_kelamin == "L")
-                    Laki-Laki
-                @else
-                    Perempuan
-                @endif  
+                {{$detailBuku->tahun_terbit}}
                   </a>
               </li>
             <li class="list-group-item">
-                <b>Agama</b> <a class="pull-right"> {{$detailGuru->agama}}</a>
+                <b>Suplier</b> <a class="pull-right">{{$detailBuku->namaSupplier}} </a>
               </li>
         <li class="list-group-item">
-          <b>Alamat</b> <a class="pull-right"> {{$detailGuru->alamat}} </a>
+        <b>Kategori</b> <a class="pull-right"> {{$detailBuku->namaKategori}}</a>
         </li>
         <li class="list-group-item">
-            <b>Pendidikan</b> <a class="pull-right"> {{$detailGuru->pendidikan}} </a>
+            <b>Harga</b> <a class="pull-right"> {{$detailBuku->harga}} </a>
           </li>
         <li class="list-group-item">
-            <b>Nomor Telepon</b> <a class="pull-right"> {{$detailGuru->no_telp}} </a>
+            <b>Jumlah</b> <a class="pull-right"> {{$detailBuku->quantity}} </a>
           </li>
-          <li class="list-group-item">
-              <b>Nomor Telepon Darurat</b> <a class="pull-right"> {{$detailGuru->no_telp_darurat}} </a>
-            </li>
         <li class="list-group-item">
-          <b>Ditetapkan Tanggal</b> <a class="pull-right"> 
-              @if ($detailGuru->created_at->format('m') == '01')
-              {{$detailGuru->created_at->format('d')}} Januari {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+          <b>Tanggal Masuk</b> <a class="pull-right"> 
+              @if ($detailBuku->created_at->format('m') == '01')
+              {{$detailBuku->created_at->format('d')}} Januari {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
               @endif
-              @if ($detailGuru->created_at->format('m') == '02')
-              {{$detailGuru->created_at->format('d')}} Februari {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+              @if ($detailBuku->created_at->format('m') == '02')
+              {{$detailBuku->created_at->format('d')}} Februari {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
               @endif
-              @if ($detailGuru->created_at->format('m') == '03')
-              {{$detailGuru->created_at->format('d')}} Maret {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+              @if ($detailBuku->created_at->format('m') == '03')
+              {{$detailBuku->created_at->format('d')}} Maret {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
               @endif
-              @if ($detailGuru->created_at->format('m') == '04')
-              {{$detailGuru->created_at->format('d')}} April {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+              @if ($detailBuku->created_at->format('m') == '04')
+              {{$detailBuku->created_at->format('d')}} April {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
               @endif
-              @if ($detailGuru->created_at->format('m') == '05')
-              {{$detailGuru->created_at->format('d')}} Mei {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+              @if ($detailBuku->created_at->format('m') == '05')
+              {{$detailBuku->created_at->format('d')}} Mei {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
               @endif
-              @if ($detailGuru->created_at->format('m') == '06')
-              {{$detailGuru->created_at->format('d')}} Juni {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+              @if ($detailBuku->created_at->format('m') == '06')
+              {{$detailBuku->created_at->format('d')}} Juni {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
               @endif
-              @if ($detailGuru->created_at->format('m') == '07')
-              {{$detailGuru->created_at->format('d')}} Juli {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+              @if ($detailBuku->created_at->format('m') == '07')
+              {{$detailBuku->created_at->format('d')}} Juli {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
               @endif
-            @if ($detailGuru->created_at->format('m') == '08')
-            {{$detailGuru->created_at->format('d')}} Agustus {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+            @if ($detailBuku->created_at->format('m') == '08')
+            {{$detailBuku->created_at->format('d')}} Agustus {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
             @endif
-            @if ($detailGuru->created_at->format('m') == '09')
-            {{$detailGuru->created_at->format('d')}} September {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+            @if ($detailBuku->created_at->format('m') == '09')
+            {{$detailBuku->created_at->format('d')}} September {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
             @endif
-            @if ($detailGuru->created_at->format('m') == '10')
-            {{$detailGuru->created_at->format('d')}} Oktober {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+            @if ($detailBuku->created_at->format('m') == '10')
+            {{$detailBuku->created_at->format('d')}} Oktober {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
             @endif
-            @if ($detailGuru->created_at->format('m') == '11')
-            {{$detailGuru->created_at->format('d')}} November {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+            @if ($detailBuku->created_at->format('m') == '11')
+            {{$detailBuku->created_at->format('d')}} November {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
             @endif
-            @if ($detailGuru->created_at->format('m') == '12')
-            {{$detailGuru->created_at->format('d')}} Desember {{$detailGuru->created_at->format('Y')}} Pukul {{$detailGuru->created_at->format('H:i:s')}}
+            @if ($detailBuku->created_at->format('m') == '12')
+            {{$detailBuku->created_at->format('d')}} Desember {{$detailBuku->created_at->format('Y')}} Pukul {{$detailBuku->created_at->format('H:i:s')}}
             @endif  
           </a>
         </li>
