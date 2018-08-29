@@ -28,19 +28,13 @@
                           <td> {{$noKategori++}} </td>
                           <td> {{$dataKategori->nama_kategori}} </td>
                           <td> 
-                              <div class="col-md-2">
                               <a href="buku/{{ $detail = "kategori" }}/{{$dataKategori->id}}/edit">
                                   <button type="button" class="btn btn-warning">Ubah</button>
                                 </a>
-                            </div>
-                            <div class="col-md-1"> </div>
-                            <div class="col-md-2">
-                            <form action="buku/kategori/{{ $dataKategori->id }}" method="post">
-                            @csrf
-                            <button type="submit" class="btn btn-danger">Hapus</button>
-                                <input type="hidden" name="_method" value="DELETE">
-                            </form>
-                        </div>
+                                <a href="buku/{{ $detail = "kategori" }}/{{$dataKategori->id}}/konfirmasi">
+                                    <button type="button" class="btn btn-danger">Hapus</button>
+                                  </a>
+                            
                           </td>
                         </tr>
                         @endforeach   

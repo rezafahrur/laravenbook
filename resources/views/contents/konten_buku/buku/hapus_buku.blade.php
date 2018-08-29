@@ -1,16 +1,27 @@
-<div class="modal fade" id="modal-hapus-buku">
+<div class="modal fade" id="modal-buku-hapus">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Hapus Data Buku</h4>
+        <h3 class="modal-title">Hapus Data Buku?</h3>
       </div>
       <div class="modal-body">
-       <h5>Apakah Anda Yakin Ingin menghapus {{$dataBuku->judul}} ?</h5>
+       <h4>Apakah Anda Yakin Ingin Menghapus Buku {{$hapusBuku->judul}} ?</h4>
+       <a>(Sekali Dihapus Data Tidak Bisa Dikembalikan Lagi)</a>
       </div> <!--- /.modal body -->
       <div class="modal-footer">
+        <div class="row pull-right">
+          <div class="col-md-5">
         <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
-        <button type="submit" class="btn btn-danger">Ya, Hapus</button>
+      </div>
+      <div class="col-md-1">
+        <form action="buku/buku/{{ $hapusBuku->id }}" method="post">
+          @csrf
+          <button type="submit" class="btn btn-danger">Hapus</button>
+              <input type="hidden" name="_method" value="DELETE">
+          </form>
+        </div>
+        </div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

@@ -14,4 +14,8 @@
 @if ($editSupplier = Session::get('editSupplier'))
 @include('contents.konten_supplier.edit_supplier')
 @endif
+<!-- modal Form hapus supplier -->
+@if ($hapusSupplier = Session::get('hapusSupplier'))
+@include('contents.konten_supplier.hapus_supplier')
+@endif
 

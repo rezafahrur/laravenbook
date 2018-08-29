@@ -1,4 +1,4 @@
-$('#modal-kategori-edit').modal({
+$('#modal-supplier-hapus').modal({
     backdrop: 'static',
     keyboard: true,
     show: true

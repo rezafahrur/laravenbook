@@ -10,7 +10,13 @@
 <!-- modal Form kategori -->
 @include('contents.konten_buku.kategori.form_kategori')
 <!-- modal Form hapus -->
-
+  @if ($hapusBuku = Session::get('hapusBuku'))
+    @include('contents.konten_buku.buku.hapus_buku')
+  @endif
+<!-- modal Form hapus Kategori -->
+  @if ($hapusKategori = Session::get('hapusKategori'))
+    @include('contents.konten_buku.kategori.hapus_kategori')
+  @endif
 <!-- Detail Buku -->
   @if ($detailBuku = Session::get('detailBuku'))
     @include('contents.konten_buku.buku.detail_buku')

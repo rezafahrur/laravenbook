@@ -39,26 +39,19 @@
                   <td> {{$dataBuku->quantity}} </td>
                 <td> {{$dataBuku->harga}} </td>
                   <td>  
-                    <div class="row">
-                    <div class="col-md-4">
                     <a href="buku/{{$dataBuku->id}}">
                       <button type="button" class="btn btn-info">Detail</button>
                       </a>
-                    </div>
+                    
                    
-                    <div class="col-md-3">
+                    
                     <a href="buku/{{ $detail = "buku" }}/{{$dataBuku->id}}/edit">
                         <button type="button" class="btn btn-primary">Edit</button>
                       </a>
-                    </div>
-                    <div class="col-md-3">
-                      <form action="buku/buku/{{ $dataBuku->id }}" method="post">
-                        @csrf
-                        <button type="submit" class="btn btn-danger">Hapus</button>
-                            <input type="hidden" name="_method" value="DELETE">
-                        </form>
-                      </div>
-                      </div>
+                      <a href="buku/{{ $detail = "buku" }}/{{$dataBuku->id}}/konfirmasi">
+                        <button type="button" class="btn btn-danger">Hapus</button>
+                      </a>
+                  
                   </td>
                 @endforeach
                 </tr>

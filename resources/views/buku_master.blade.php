@@ -79,6 +79,12 @@
     @endif
     @if (Session::get('detailBuku') == true)
     <script src="{{ asset("/js/buku/detailBuku.js") }}" ></script>    
-@endif
+    @endif
+    @if (Session::get('hapusBuku') == true)
+    <script src="{{ asset("/js/buku/hapusBuku.js") }}" ></script>    
+    @endif
+    @if (Session::get('hapusKategori') == true)
+    <script src="{{ asset("/js/buku/hapusKategori.js") }}" ></script>    
+    @endif
     </body>
 </html>

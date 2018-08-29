@@ -55,4 +55,10 @@ class SupplierController extends Controller
 
         return redirect()->back()->with('successDeleteSupplier','supplier berhasil di hapus');
     }
+
+
+    public function konfirmasi($id){
+        $hapusSupplier = Supplier::find($id);
+        return redirect()->back()->with('hapusSupplier', $hapusSupplier);
+    }
 }

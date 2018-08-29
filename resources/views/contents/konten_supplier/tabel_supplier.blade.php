@@ -32,25 +32,17 @@
                   <td> {{$dataSupplier->alamat}} </td>
                   <td> {{$dataSupplier->no_telp}} </td>
                   <td>  
-                      <div class="col-md-1">
+                   
                       <a href="supplier/{{$dataSupplier->id}}">
                       <button type="button" class="btn btn-info">Detail</button>
                       </a>  
-                    </div>
-                    <div class="col-md-1"> </div>
-                    <div class="col-md-1">
                     <a href="supplier/{{$dataSupplier->id}}/edit">
                         <button type="button" class="btn btn-primary">Ubah</button>
                       </a>
-                    </div>
-                   <div class="col-md-1"></div>
-                    <div class="col-md-1">
-                    <form action="supplier/{{$dataSupplier->id}}" method="POST">
-                      @csrf
-                    <button type="submit" class="btn btn-danger">Hapus</button>
-                    <input type="hidden" name="_method" value="DELETE">
-                    </form>
-                  </div>
+                      <a href="supplier/{{$dataSupplier->id}}/konfirmasi">
+                        <button type="button" class="btn btn-danger">Hapus</button>
+                      </a>
+                  
                   </td>
                 @endforeach
                 </tr>

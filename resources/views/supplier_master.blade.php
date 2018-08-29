@@ -70,5 +70,8 @@
 @if (Session::get('successDeleteSupplier') == true)
     <script src="{{ asset("/js/supplier/successDeleteSupplier.js") }}" ></script>    
 @endif
+@if (Session::get('hapusSupplier') == true)
+    <script src="{{ asset("/js/supplier/hapusSupplier.js") }}" ></script>    
+@endif
     </body>
 </html>

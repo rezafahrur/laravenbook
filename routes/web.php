@@ -20,6 +20,7 @@ Route::get('/supplier', 'SupplierController@index')->name('supplier');
 Route::post('/supplier', 'SupplierController@store');
 Route::get('/supplier/{id}','SupplierController@show');
 Route::get('/supplier/{id}/edit', 'SupplierController@edit');
+Route::get('/supplier/{id}/konfirmasi', 'SupplierController@konfirmasi');
 Route::put('/supplier/{id}', 'SupplierController@update');
 Route::delete('/supplier/{id}', 'SupplierController@destroy');
 
@@ -27,6 +28,7 @@ Route::get('/buku', 'BukuController@index')->name('buku');
 Route::post('/buku', 'BukuController@store');
 Route::get('buku/{id}', 'BukuController@show');
 Route::get('/buku/{detail}/{id}/edit', 'BukuController@edit');
+Route::get('/buku/{detail}/{id}/konfirmasi', 'BukuController@konfirmasi');
 Route::put('/buku/{id}', 'BukuController@update');
 Route::delete('/buku/{detail}/{id}', 'BukuController@destroy');
 

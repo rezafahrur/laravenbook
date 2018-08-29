@@ -79,4 +79,14 @@ class BukuController extends Controller
 
     }
     
+    public function konfirmasi($detail, $id){
+        if($detail == "buku"){
+            $hapusBuku = $this->tampilDetailBukuTrait($id);
+            return redirect()->route('buku')->with('hapusBuku', $hapusBuku);
+        }
+        if($detail == "kategori"){
+            $hapusKategori = $this->tampilDetailKategoriTrait($id);
+            return redirect()->route('buku')->with('hapusKategori', $hapusKategori);
+        }
+    }
 }
