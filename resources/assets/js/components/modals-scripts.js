@@ -18,6 +18,13 @@ $('#modal-supplier-edit').on('hide.bs.modal', function () {
     $('.modal .modal-dialog').attr('class', 'modal-dialog zoomOutUp animated');
     $(this).removeData();
 });
+$('#modal-supplier-hapus').on('show.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog zoomIn animated');
+});
+$('#modal-supplier-hapus').on('hide.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog zoomOutUp animated');
+    $(this).removeData();
+});
 $('#modal-buku').on('show.bs.modal', function () {
     $('.modal .modal-dialog').attr('class', 'modal-dialog zoomIn animated');
 });
@@ -38,6 +45,13 @@ $('#modal-buku-edit').on('hide.bs.modal', function () {
     $('.modal .modal-dialog').attr('class', 'modal-dialog zoomOutUp animated');
     $(this).removeData();
 });
+$('#modal-buku-hapus').on('show.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog zoomIn animated');
+});
+$('#modal-buku-hapus').on('hide.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog zoomOutUp animated');
+    $(this).removeData();
+});
 $('#modal-kategori').on('show.bs.modal', function () {
     $('.modal .modal-dialog').attr('class', 'modal-dialog zoomIn animated');
 });
@@ -48,6 +62,13 @@ $('#modal-kategori-edit').on('show.bs.modal', function () {
     $('.modal .modal-dialog').attr('class', 'modal-dialog zoomIn animated');
 });
 $('#modal-kategori-edit').on('hide.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog zoomOutUp animated');
+    $(this).removeData();
+});
+$('#modal-kategori-hapus').on('show.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog zoomIn animated');
+});
+$('#modal-kategori-hapus').on('hide.bs.modal', function () {
     $('.modal .modal-dialog').attr('class', 'modal-dialog zoomOutUp animated');
     $(this).removeData();
 });

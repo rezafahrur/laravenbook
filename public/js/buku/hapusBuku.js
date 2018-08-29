@@ -3,5 +3,5 @@ $('#modal-buku-hapus').modal({
     keyboard: true,
     show: true
 });
-var sound = document.getElementById("addSound");
+var sound = document.getElementById("errorSound");
 sound.play();
