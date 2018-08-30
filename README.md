@@ -22,7 +22,7 @@ No
 
 ## How is it developed?
 
-Think of this as a related group of Basic products but you need to be a set quantity from a range, you pick the items to make up the pack. I.e 3-pack of Coffee, you pick the selected range of brands to put in the pack.
+Think of this as a related group of Basic products but you need to be a set quantity from a range, you pick the items to make up the pack. I.e 3-pack of Coffee, then you pick the selected range of brands to put in the pack.
 
 
 
