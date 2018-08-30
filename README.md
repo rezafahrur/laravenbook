@@ -2,7 +2,7 @@
 
 # What is it
 
-Laravenbook is a Web Based inventory system for book store built on a Laravel 5.6. It is designed to be catchy in the eyes with a colorful and intuitive information.
+Laravenbook is a Web Based inventory system for book store built with Laravel 5.6. It is designed to be catchy in the eyes with a colorful and intuitive information.
 
 Laravenbook was initially aimed at small sites who wish to move to an inexpensive easy to develop with an easy to use templating environment (using Laravel Blade Templates).
 
