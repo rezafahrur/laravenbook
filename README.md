@@ -13,7 +13,7 @@ Laravenbook was initially aimed for small sites wishing to move to a new environ
 
 ## Is it Production Ready?
 
-Laravenbook is running in production environment but is still considered Beta until the current round of code refactoring and features is being completed.
+Laravenbook is running in production environment, but right now it is still considered as Beta until the current round of code refactoring is completed and all of its features are fully developed.
 
 
 ## Has it fully implemented yet?
@@ -22,13 +22,15 @@ No
 
 ## How is it developed?
 
-Think of this as a related group of Basic products but you need to be a set quantity from a range, you pick the items to make up the pack. I.e 3-pack of Coffee, then you pick the selected range of brands to put in the pack.
+Think of this as a related group of Basic products but you need to be a set quantity from a range, you pick the items to make up the pack. I.e 3-pack of Coffee, and then, you pick the selected range of brands to put in the pack.
 
 
 
 # Preview
 ![image1](https://i.imgur.com/bwSQJam.png)
-![image2](https://i.imgur.com/FWm5isa.png)
+![image2](https://i.imgur.com/gJjQl5e.png)
+![image3](https://i.imgur.com/FWm5isa.png)
+
 
 # License
 Copyright 2018 Reza Fahrur. Code released under the MIT license
