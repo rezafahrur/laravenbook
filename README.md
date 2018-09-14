@@ -27,11 +27,6 @@ Think of it as a related group of Products and you need to set the quantity by a
 
 
 # Preview
-![image1](https://i.imgur.com/bwSQJam.png)
-![image2](https://i.imgur.com/gJjQl5e.png)
 ![image3](https://i.imgur.com/FWm5isa.png)
 
-
-# License
-Copyright 2018 Reza Fahrur. Code released under the MIT license
 
